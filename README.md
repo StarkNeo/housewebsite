@@ -22,7 +22,7 @@ The application consists in:
 ## CREATE A PYTHON VIRTUAL ENVIRONMENT AND INSTALL OPENAI PYTHON LIBRARIES
 Install Python.
 Setup a python virtual environment in your folder project with. 
-```bash pip python -m venv "housewebsite" ```
+`bash pip python -m venv "housewebsite"`
 this will create a directory name "housewebsite" inside your project directory.
 it is a good practice to create a virtual python environment to install the OpenAI Python library. Virtual environments provide a clean working space for your Python packages to be installed so that you do not have conflicts with other libraries you install for other projects.
 3.-Inside you project directory activate the virtual environment with: housewebsite\Scripts\activate
