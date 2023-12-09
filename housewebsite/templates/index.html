@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>HOUSE CONSULTANT</h1>
+        <p>
+            The purpose of this application is for entertainment, this pretend to receive a medical advice by Dr. Gregory House a fictional protagonist of the serie House.
+            You are interacting with an AI system no real person is behind the recommendations deployed, thus this
+            information does not pretend to be a medical advice or any medical suggestions.
+            
+            
+        </p>
+    </header>
+
+    <main>
+        <section id="questions-section">
+            <form method="POST">
+                Select how would you like to ask: <br>
+                {% for question in questions %}
+                {% if question == "text" %}
+                <div class="select-options">
+                    <label for="question-type"><b>Ask typing my self consult</b></label>
+                    <input type="radio" name="question-type" id="" onclick="setOption(this.value)" value="{{question}}"
+                        checked>
+                </div>
+
+                {% else %}
+                <fieldset id="input-search">
+                    <input type="text" name="input-text" id="input-text" placeholder="Type your question here" required>
+                    
+                </fieldset>
+                <div class="select-options">
+                    <label for="question-type"><b>Unsure what to ask? select this option</b></label>
+                <input type="radio" name="question-type" id="" onclick="setOption(this.value)" value="{{question}}">
+                
+                </div>
+                
+                <fieldset id="input-options">
+                    <label for="option">Here are some Ideas</label><br>
+                    <select name="option" id="option" required>
+                        <option value="none"> </option>
+                        {% for option in select %}
+                        <option value="{{option}}">{{option}}</option>
+                        {% endfor %}
+                    </select>
+                </fieldset>
+                {% endif %}
+                {% endfor %}
+                <br><br>
+                <input class="btn btn-secondary" type="submit" value="Send question">
+                
+            </form>
+
+        </section>
+        <section id="answers-section">
+            <button id="read-answer" type="button" class="btn btn-secondary">
+                Read Answer
+            </button>
+            <button id="listen-answer" type="button" class="btn btn-secondary">
+                Listen Answer
+            </button>
+            <textarea name="" id="answer" cols="30" rows="10" disabled>{{textResponse}}</textarea>
+            <audio id="audio-answer" src="../static/answer.mp3" controls>aqui va un audio</audio>
+    
+    
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>For real information related to health symptoms, medical treatments and all related we encourage you to visit a Doctor and this website which may contain relevant information about it: <a
+                href='https://medlineplus.gov/index.html'>MedlinePlus.gov</a></p>
+        <p>Several question options were gathered from EverybodyWiki <a href="https://en.everybodywiki.com/List_of_diagnoses_from_House_%28TV_series%29">Visit </a> </p>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

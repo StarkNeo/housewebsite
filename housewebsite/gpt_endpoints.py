@@ -7,12 +7,12 @@ client = OpenAI()
 from openai import OpenAI
 client = OpenAI()
 
-def textToAudio():
-    speech_file_path = Path(__file__).parent/"speech.mp3"
+def textToAudio(text):
+    speech_file_path = Path(__file__).parent/"static/answer.mp3"
     response = openai.audio.speech.create(
     model =  "tts-1",
     voice =  "alloy",   
-    input = "Gongon is late, wakeup and get up! we need to go to supermarket"
+    input = text
     )
     return response.stream_to_file(speech_file_path)
 
@@ -30,7 +30,7 @@ def consultant(topic):
     #temperature=1.0,
    # max_tokens=100
     )
-    return completion.choices[0].message
+    return completion.choices[0].message.content
 
 
 

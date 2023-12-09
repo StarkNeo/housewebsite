@@ -1,0 +1,56 @@
+body{
+    width: 50%;
+    margin: auto;
+}
+
+#input-text{
+    display: flex;
+    width: 100%;
+}
+
+#input-options{
+    display: none;
+    flex-direction: column;
+}
+
+#answer{
+    display: none;
+}
+
+#input-audio{
+    display: none;
+}
+#audio-answer{
+    display: none;
+}
+
+#busqueda #buscador #inputLine #iconoClose {
+    cursor: pointer;
+    width: 12.5%;
+    height: 20px;
+    background-image: url(../images/icon-search-mod-noc.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  textarea{
+    width: 100%;
+  }
+  
+  .select-options{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#input-search{
+    width: 100%;
+}
+
+#answers-section{
+    margin-top: 2rem;
+}
+
+footer{
+    margin-top: 5rem;
+}
