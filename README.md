@@ -29,18 +29,18 @@ it is a good practice to create a virtual python environment to install the Open
 5. Setup your API Key with: setx OPENAI_API_KEY "your-api-key-here"
 6. With the virtual environment activate, navigate to housewebsite and install Flask with: pip install flask
 
-#How to use the project
+# How to use the project
 1. Run the application with: python main.py
 2. Once the application is running you can see the home page in your localhost or http://localhost:5000
 3. Select the type of question you prefer, example typying text or select and option from the drop down
 4. Send the question
 5. The answer to your question must appears in text to be read or and audio to be listen, you can press either or both buttons.
 
-#Documentation
+# Documentation
 * API OPENAI https://platform.openai.com/docs/api-reference/chat/create
 * FLASK https://flask.palletsprojects.com/en/1.1.x/
 * PYTHON https://www.python.org/downloads/
 
-#License
+# License
 This project is licensed under the MIT License - see the Licence file for details.
 
