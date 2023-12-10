@@ -36,5 +36,11 @@ it is a good practice to create a virtual python environment to install the Open
 4. Send the question
 5. The answer to your question must appears in text to be read or and audio to be listen, you can press either or both buttons.
 
+#Documentation
+* API OPENAI https://platform.openai.com/docs/api-reference/chat/create
+* FLASK https://flask.palletsprojects.com/en/1.1.x/
+* PYTHON https://www.python.org/downloads/
 
+#License
+This project is licensed under the MIT License - see the Licence file for details.
 
