@@ -18,8 +18,8 @@ The application consists in:
 * OPENAI API endpoints to interact with GPT 3.5 Turbo
 * CSV file that contains a list of prompts to be loaded in the application
 
-# Requirements to install and run the application, this repository includes all requirements needed except the api key
-## CREATE A PYTHON VIRTUAL ENVIRONMENT, INSTALL OPENAI PYTHON LIBRARIES AND SETTING UP THE APPLICATION
+# Requirements to install and run the application(this repository includes all requirements needed except the api key)
+## Create a Python virtual environment, install OPENAI library and setting up the application
 1. Install Python.
 2. Setup a python virtual environment in your folder project with: python -m venv "housewebsite"
 this will create a directory name "housewebsite" inside your project directory.
@@ -29,6 +29,12 @@ it is a good practice to create a virtual python environment to install the Open
 5. Setup your API Key with: setx OPENAI_API_KEY "your-api-key-here"
 6. With the virtual environment activate, navigate to housewebsite and install Flask with: pip install flask
 
+#How to use the project
+1. Run the application with: python main.py
+2. Once the application is running you can see the home page in your localhost or http://localhost:5000
+3. Select the type of question you prefer, example typying text or select and option from the drop down
+4. Send the question
+5. The answer to your question must appears in text to be read or and audio to be listen, you can press either or both buttons.
 
 
 
