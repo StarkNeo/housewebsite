@@ -1,8 +1,8 @@
 # housewebsite
 # TABLE OF CONTENTS
-1. Project Description:
-2. Purpose
-3. Aknowledgements
+1. [Project Description]
+2. [Purpose]
+3. [Aknowledgements]
 4. Components
 5. Requirements
 6. Use
