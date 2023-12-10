@@ -1,6 +1,6 @@
 # housewebsite
 # TABLE OF CONTENTS
-1. [Project Description]
+1. [Project Description:]
 2. [Purpose]
 3. [Aknowledgements]
 4. Components
